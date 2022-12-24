@@ -1,6 +1,5 @@
 *,*:after,*:before {
     box-sizing: border-box;
-
 }
 
 body {
@@ -21,25 +20,23 @@ body {
     top: 0;
     left: 0;
 
-    & > * {
-        padding: 8px;
+
+    & > li {
+        padding: 18px;
+        border-radius: 3px;
+        cursor: pointer;
         color: #fff;
-
-        & > li {
-            padding: 8px;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-
-        & > .w3-grey {
-            color: grey;
-            margin: 0px 0 4px 0;
-        }
-
-        & > li:hover {
-            background-color: #BFB3A8;
-        }
     }
+
+    & > .w3-grey {
+        color: grey;
+        margin: 0px 0 4px 0;
+    }
+
+    & > li:hover {
+        background-color: #BFB3A8;
+    }
+    
 }
 
 .li1 {
