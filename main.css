@@ -1,0 +1,153 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 1600px;
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#menuBar {
+  list-style-type: none;
+  width: 54px;
+  height: 100%;
+  border-left: 3px solid #BD2A2E;
+  background-color: #012E40;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#menuBar > * {
+  padding: 8px;
+  color: #fff;
+}
+
+#menuBar > * > li {
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#menuBar > * > .w3-grey {
+  color: grey;
+  margin: 0px 0 4px 0;
+}
+
+#menuBar > * > li:hover {
+  background-color: #BFB3A8;
+}
+
+.li1 {
+  border-bottom: 1.7px solid rgba(191, 179, 168, 0.2);
+}
+
+.margin-left {
+  margin: 0px 0 0 54.45px;
+}
+
+.head {
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head > h3 {
+  font-size: 16px;
+  color: darkslategrey;
+}
+
+.head .w3-head-icon {
+  font-size: 10px;
+  padding: 7px;
+  margin: 0 12px 0 0;
+  background-color: #BFB3A8;
+  color: #fff;
+  border-radius: 50% 10% 50% 50%;
+  position: relative;
+  bottom: 4px;
+}
+
+.flex {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Work Sans', sans-serif;
+  margin-right: 8px;
+}
+
+.flex > * {
+  margin: 0 12px 0 0;
+}
+
+.flex input {
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid lightgrey;
+}
+
+.flex input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.flex input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.flex input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.flex input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.flex button {
+  border: none;
+  padding: 6px 12px 6px 12px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #012E40;
+  cursor: pointer;
+}
+
+.flex .account {
+  color: #fff;
+  font-weight: bold;
+  padding: 8px;
+  background-color: #BFB3A8;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.flex .questions, .flex .cart {
+  font-size: 16px;
+  color: grey;
+}
+
+.flex .divider {
+  background-color: rgba(191, 179, 168, 0.2);
+  width: 1.6px;
+  height: 25px;
+}
+/*# sourceMappingURL=main.css.map */
