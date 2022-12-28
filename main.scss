@@ -341,11 +341,14 @@ body {
 
 }
 
-@media (max-width: 800px) {
+
+// Responsive view
+
+@media screen and (max-width:800px) {
     #menuBar {
         width: 100%;
         z-index: 99;
-        // right: 0;
+        right: 0;
         margin: 0;
         display: none;
     }
