@@ -12,11 +12,11 @@ shape.forEach(sp => {
   }
 })
 
-const menuBtn = document.querySelector('.burger');
+// const menuBtn = document.querySelector('.burger');
 
-menuBtn.onclick = () =>  {
-  fullBar.classList.toggle('is-active');
-};
+// menuBtn.onclick = () =>  {
+//   fullBar.classList.toggle('is-active');
+// };
 
 const animate = document.querySelector('.burger');
 animate.classList.add('unToggled');

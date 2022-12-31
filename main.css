@@ -405,7 +405,7 @@ body {
     right: 16px;
   }
   .burger > div {
-    width: 26px;
+    width: 22px;
     height: 3px;
     background-color: red;
     -webkit-transition: all .5s;
@@ -415,7 +415,7 @@ body {
     content: '';
     display: block;
     position: absolute;
-    width: 26px;
+    width: 22px;
     height: 3px;
     background-color: red;
   }
@@ -425,8 +425,195 @@ body {
   .burger > div::before {
     margin-top: -7px;
   }
+  .burger2 > div {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .burger2.toggled > div::before {
+    -webkit-animation: burgtop .5s linear forwards;
+            animation: burgtop .5s linear forwards;
+  }
+  .burger2.toggled > div {
+    background: transparent;
+  }
+  .burger2.toggled > div::after {
+    -webkit-animation: burgbottom .5s linear forwards;
+            animation: burgbottom .5s linear forwards;
+  }
+  .burger2.unToggled > div::after {
+    -webkit-animation: burgtopreset .5s linear forwards;
+            animation: burgtopreset .5s linear forwards;
+  }
+  .burger2.unToggled > div {
+    background: red;
+  }
+  .burger2.unToggled > div::before {
+    -webkit-animation: burgbottomreset .5s linear forwards;
+            animation: burgbottomreset .5s linear forwards;
+  }
+  @-webkit-keyframes burgtop {
+    0% {
+    }
+    50% {
+      margin-top: 0;
+      -webkit-transform: rotate(55deg);
+              transform: rotate(55deg);
+    }
+    100% {
+      margin-top: 0;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+  }
+  @keyframes burgtop {
+    0% {
+    }
+    50% {
+      margin-top: 0;
+      -webkit-transform: rotate(55deg);
+              transform: rotate(55deg);
+    }
+    100% {
+      margin-top: 0;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+  }
+  @-webkit-keyframes burgbottom {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 0;
+      -webkit-transform: rotate(-55deg);
+              transform: rotate(-55deg);
+    }
+    100% {
+      margin-top: 0;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+  }
+  @keyframes burgbottom {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 0;
+      -webkit-transform: rotate(-55deg);
+              transform: rotate(-55deg);
+    }
+    100% {
+      margin-top: 0;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+  }
+  @keyframes burgbottom {
+    0% {
+    }
+    20% {
+      margin-top: 0em;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    60% {
+      margin-top: 0em;
+      -webkit-transform: rotate(-55deg);
+              transform: rotate(-55deg);
+    }
+    100% {
+      margin-top: 0em;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+  }
+  @-webkit-keyframes burgtopreset {
+    0% {
+      margin-top: 0em;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    20% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    60% {
+      margin-top: 8px;
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      margin-top: 7px;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+  }
+  @keyframes burgtopreset {
+    0% {
+      margin-top: 0em;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    20% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    60% {
+      margin-top: 8px;
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      margin-top: 7px;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+  }
+  @-webkit-keyframes burgbottomreset {
+    0% {
+      margin-top: 0em;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    20% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    60% {
+      margin-top: -8px;
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      margin-top: -7px;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+  }
+  @keyframes burgbottomreset {
+    0% {
+      margin-top: 0em;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    20% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    60% {
+      margin-top: -8px;
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      margin-top: -7px;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+  }
   .head {
-    padding: 3px 0px 5px 8px;
+    padding: 4px 0px 5px 8px;
     background-color: #000;
     position: fixed;
     width: 100%;
@@ -462,7 +649,7 @@ body {
   }
   .head2 .left {
     max-width: 100%;
-    width: 330px;
+    width: 342px;
   }
   .main-body {
     padding: 18px;
