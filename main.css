@@ -10,6 +10,10 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+.w3-responsive-bar {
+  display: none;
+}
+
 #menuBar {
   list-style-type: none;
   width: 54px;
@@ -165,7 +169,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: rgba(140, 140, 140, 0.1);
+  background-color: rgba(140, 140, 140, 0.3);
 }
 
 .head2 ul {
@@ -287,7 +291,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 3rem;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -386,23 +389,92 @@ body {
   margin: 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   #menuBar {
     width: 100%;
     z-index: 99;
-    right: 0;
+    left: 100%;
     margin: 0;
-    display: none;
-  }
-  .head, .head2, .row1, .row1-left, .row2 {
     display: block;
   }
+  .w3-responsive-bar {
+    display: block;
+    position: fixed;
+    z-index: 4;
+    top: 32px;
+    right: 16px;
+  }
+  .burger > div {
+    width: 26px;
+    height: 3px;
+    background-color: red;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .burger > div::after, .burger > div::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    background-color: red;
+  }
+  .burger > div::after {
+    margin-top: 7px;
+  }
+  .burger > div::before {
+    margin-top: -7px;
+  }
   .head {
-    padding: 3px 0px 0 8px;
+    padding: 3px 0px 5px 8px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+  }
+  .head h3 {
+    margin-top: 20px;
+    color: white;
+  }
+  .head2 {
+    display: -ms-grid;
+    display: grid;
+    margin: 4.3rem 0 0 -12px;
+  }
+  .head2 * {
+    margin: 1px 0 1px 0;
+  }
+  .head2 .w3-left1-margin {
+    display: none;
+  }
+  .head2 .w3-right-margin {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .head2 #candidate {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+  }
+  .head2 #job {
+    margin: 1px 0px 0 -1px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .head2 .left {
+    max-width: 100%;
+    width: 330px;
   }
   .main-body {
     padding: 18px;
-    margin-top: -11.8px;
+  }
+  .main-body .row1 {
+    display: block;
+  }
+  .main-body .row1-right {
+    display: none;
+  }
+  .main-body .row2 {
+    display: block;
   }
   .margin-left {
     margin: -15px 0 0 0;
@@ -419,6 +491,12 @@ body {
     max-width: 100%;
     width: 94% !important;
     margin-left: 20px !important;
+  }
+  .member .top {
+    height: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
