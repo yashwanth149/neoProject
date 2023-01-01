@@ -1,6 +1,7 @@
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: 1px solid pink;
 }
 
 body {
@@ -388,7 +389,7 @@ body {
   margin: 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #menuBar {
     width: 100%;
     z-index: 99;
@@ -626,7 +627,13 @@ body {
   .head2 {
     display: -ms-grid;
     display: grid;
-    margin: 4.3rem 0 0 -12px;
+    -ms-grid-rows: (2)[1fr];
+        grid-template-rows: repeat(1fr, 2);
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+    margin: 4.3rem 0 0 0px;
+    padding-left: 20px;
+    outline: 2px solid blue;
   }
   .head2 * {
     margin: 1px 0 1px 0;
@@ -648,7 +655,7 @@ body {
   }
   .head2 .left {
     max-width: 100%;
-    width: 348px;
+    width: 340px;
   }
   .main-body {
     padding: 18px;
