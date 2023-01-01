@@ -347,16 +347,23 @@ body {
 }
 
 
-// // Responsive view
+// Responsive view
 
 @media screen and (max-width:500px) {
     #menuBar {
         width: 100%;
         z-index: 99;
+        top: 68px;
         left: 100%;
         margin: 0;
         display: block;
+        transition: all .5s;
+
     }
+
+    #menuBar.is-active {
+        left: 0;
+    } 
 
     .w3-responsive-bar {
         display: block;
