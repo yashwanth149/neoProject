@@ -27,5 +27,15 @@ animate.onclick = () => {
   animate.classList.toggle('unToggled');
 }
 
+const dragArea = document.querySelectorAll('.dragBox')
+
+
+dragArea.forEach(column => {
+  new Sortable(column, {
+    animation: 350
+  })
+})
+
+
 
 
