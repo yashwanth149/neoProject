@@ -1,16 +1,16 @@
 {/* <i class="fa-regular fa-star"></i> */}
+const starDiv = document.querySelectorAll('.star')
+const shapes = document.querySelectorAll('.shape')
 
-const starDiv = document.querySelector('.star')
-const shape = document.querySelectorAll('.shape')
+for (let i = 0;i < starDiv.length;i++){
+  let st = starDiv[i]
+   shapes.forEach(shape => {
+     shape.onclick = () => {
+       st.innerHTML = `${shape.getAttribute('value')} <i class="fa-solid fa-star"></i>`
+     }
+   })
+}
 
-shape.forEach(sp => {
-  sp.onclick = () => {
-    starDiv.style.display = 'none'
-    // starDiv.innerHTML = '<i class="fa-solid fa-star">333</i>'
-    starDiv.innerText = sp.getAttribute('value')
-    starDiv.style.display = 'block'
-  }
-})
 
 const animate = document.querySelector('.burger');
 const fullBar = document.querySelector('.respons-bar')
