@@ -1,15 +1,14 @@
 {/* <i class="fa-regular fa-star"></i> */}
-const starDiv = document.querySelectorAll('.star')
-const shapes = document.querySelectorAll('.shape')
+const shapes = document.querySelectorAll('.shape');
 
-for (let i = 0;i < starDiv.length;i++){
-  let st = starDiv[i]
-   shapes.forEach(shape => {
-     shape.onclick = () => {
-       st.innerHTML = `${shape.getAttribute('value')} <i class="fa-solid fa-star"></i>`
-     }
-   })
-}
+shapes.forEach(shape => {
+  shape.addEventListener('click', event => {
+    const star = event.target.closest('.stars');
+    star.innerHTML = `${event.target.getAttribute('data-value')} <i class="fas fa-star"></i> `;
+    star.style.paddingLeft = '6px';
+    star.style.fontSize = '11px'
+  });
+});
 
 
 const animate = document.querySelector('.burger');
@@ -35,7 +34,5 @@ dragArea.forEach(column => {
     animation: 350
   })
 })
-
-
 
 
