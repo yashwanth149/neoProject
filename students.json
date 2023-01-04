@@ -1,0 +1,52 @@
+{
+    "students": [
+      {
+        "name": "John Smith",
+        "college": "University of California, Berkeley"
+      },
+      {
+        "name": "Jane",
+        "college": "Stanford University"
+      },{
+        "name": "James",
+        "college": "Stanford University"
+      },
+      {
+        "name": "Leela",
+        "college": "KLU University"
+      },
+      {
+        "name": "Simsons",
+        "college": "University"
+      },{
+        "name": "Stweeie",
+        "college": "Harvard University"
+      },{
+        "name": "Jane ",
+        "college": "Stanford University"
+      },
+      {
+        "name": "Bob Johnson",
+        "college": "Harvard University"
+      },{
+        "name": "Jane BOB",
+        "college": "Stanford University"
+      },{
+        "name": "Jane Smith",
+        "college": "Stanford University"
+      },{
+        "name": "Jane Smith",
+        "college": "Stanford University"
+      },{
+        "name": "Jane ",
+        "college": "Stanford University"
+      },{
+        "name": "Jane Smith",
+        "college": "Stanford University"
+      },{
+        "name": "Jane Smith",
+        "college": "Stanford University"
+      }
+    ]
+  }
+  

@@ -1,7 +1,14 @@
 *,*:after,*:before {
     box-sizing: border-box;
 }
-
+.container {
+    padding:6px 0 6px 12px;
+    margin: 5px 0 5px 0 !important;
+    width: 100%;
+    max-width: 180px;
+    color: rgba($color: #012E40, $alpha: .8);
+    font-weight: bold;
+}
 
 body {
     max-width: 1600px;

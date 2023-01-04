@@ -35,3 +35,15 @@ dragArea.forEach(column => {
   
 })
 
+fetch('students.json')
+                .then(response => response.json())
+                .then(data => {
+                  data.students.forEach((student, index) => {
+                    const div = document.createElement('div');
+                    div.textContent = `${student.name} - ${student.college}`;
+                    document.getElementById(`container${index + 1}`).appendChild(div);
+                  });
+                });
+
+
+
