@@ -1,7 +1,7 @@
 {
     "students": [
       {
-        "name": "John Smith",
+        "name": "Smith",
         "college": "University of California, Berkeley"
       },
       {
@@ -31,21 +31,26 @@
       },{
         "name": "Jane BOB",
         "college": "Stanford University"
-      },{
-        "name": "Jane Smith",
-        "college": "Stanford University"
-      },{
-        "name": "Jane Smith",
-        "college": "Stanford University"
-      },{
-        "name": "Jane ",
-        "college": "Stanford University"
-      },{
-        "name": "Jane Smith",
-        "college": "Stanford University"
-      },{
-        "name": "Jane Smith",
-        "college": "Stanford University"
+      },
+      {
+        "name": "Hemanth T",
+        "college": "NIT"
+      },
+      {
+        "name":"Manoj B",
+        "college":"IIT"
+      },
+      {
+        "name":"Venky Bone",
+        "college":"KLU"
+      },
+      {
+        "name":"Sam",
+        "college":"Stanford University"
+      },
+      {
+        "name":"Susan",
+        "college":"Harvard University"
       }
     ]
   }
