@@ -388,6 +388,13 @@ body {
   margin: 0;
 }
 
+@media screen and (min-width: 509px) and (max-width: 1023px) {
+  .row2 {
+    overflow-x: scroll;
+    gap: 1rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #menuBar {
     width: 100%;

@@ -1,4 +1,3 @@
-{/* <i class="fa-regular fa-star"></i> */}
 const shapes = document.querySelectorAll('.shape');
 
 shapes.forEach(shape => {
@@ -33,6 +32,6 @@ dragArea.forEach(column => {
   new Sortable(column, {
     animation: 350
   })
+  
 })
-
 
