@@ -330,16 +330,17 @@ body {
         
 
         }
-        
+    .stars {
+        display: flex;
+        flex-wrap: wrap;
+    }
         .star {
-            background-color: rgba($color: #BCC5CE, $alpha: .2);
             padding: 5px 0 3px 5px;
             align-items: flex-start;
-
-            i {
+            
+            span {
                 color: rgba($color: #000000, $alpha: .6);
                 font-size: 12px;
-                padding: 0;
             }
             * {
                 margin: -1px;
