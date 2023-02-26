@@ -7,7 +7,6 @@
     <title>Project</title>
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/5223564b75.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js" integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 <body>
@@ -29,7 +28,7 @@
                 <h3><i class="fa-solid fa-user w3-head-icon"></i>iamneo.ai Talent Center</h3>
                 <div class="flex">
                     <input id="search" type="search" placeholder="&#x1F50D Search">
-                    <button><span>+</span> Add New</button>
+                    <button id='new' onclick="clickButton()"><span>+</span> Add New</button>
                     <div class="divider"></div>
                     <div class="cart"><i class="fa-solid fa-gift"></i></div>
                     <div class="questions"><i class="fa-regular fa-circle-question"></i></div>
@@ -88,13 +87,8 @@
                             </div>
                             <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div>
+                        <div class="stars"></div>
+
                     </li>
                     <li class="member">
                         <div class="top">
@@ -102,13 +96,8 @@
                             </div>
                             <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div>
+                        <div class="stars"></div>
+
                     </li>
                     <li class="member">
                         <div class="top">
@@ -116,13 +105,8 @@
                             </div>
                                 <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div>                    
+                        <div class="stars"></div>
+                   
                     </li>
                     <li class="member">
                         <div class="top">
@@ -130,13 +114,8 @@
                             </div>
                             <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div>
+                        <div class="stars"></div>
+
                     </li>
                     <li class="member">
                         <div class="top">
@@ -144,13 +123,8 @@
                             </div>
                             <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div>     
+                        <div class="stars"></div>
+    
                     </li>               
                     <li class="member">
                         <div class="top">
@@ -158,13 +132,8 @@
                             </div>
                             <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div> 
+                        <div class="stars"></div>
+ 
                     </li>                  
                 </div>
                 <div class="col2 dragBox">
@@ -175,13 +144,8 @@
                             </div>
                             <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div>
+                        <div class="stars"></div>
+
                     </li>
                     <li class="member">
                         <div class="top">
@@ -189,13 +153,8 @@
                             </div>
                             <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div>                   
+                        <div class="stars"></div>
+                   
                     </li>
                     <li class="member">
                         <div class="top">
@@ -203,13 +162,8 @@
                             </div>
                             <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div>
+                        <div class="stars"></div>
+
                     </li>
                     <li class="member">
                         <div class="top">
@@ -217,13 +171,8 @@
                             </div>
                             <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div>
+                        <div class="stars"></div>
+
                     </li>
                 </div>
                 <div class="col3 dragBox">
@@ -234,13 +183,8 @@
                             </div>
                             <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div>
+                        <div class="stars"></div>
+
                     </li>
                     <li class="member">
                         <div class="top">
@@ -248,13 +192,8 @@
                             </div>
                             <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div>
+                        <div class="stars"></div>
+
                     </li>
                 </div>
                 <div class="col4">
@@ -268,13 +207,8 @@
                             </div>
                             <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div>
+                        <div class="stars"></div>
+
                     </li>
                     <li class="member">
                         <div class="top">
@@ -282,13 +216,7 @@
                             </div>
                             <p class="top-p3" style="text-align: right; font-size: 11px; padding: 3px 12px 3px 0;">REQ: #1062</p>
                         </div>
-                        <div class="stars">
-                            <i  class="fa-regular fa-star shape" data-value='1'></i>
-                            <i  class="fa-regular fa-star shape" data-value='2'></i>
-                            <i class="fa-regular fa-star shape" data-value='3'></i>
-                            <i class="fa-regular fa-star shape" data-value='4'></i>
-                            <i class="fa-regular fa-star shape" data-value='5'></i>
-                        </div>
+                        <div class="stars"></div>
                     </li>
                     
                 </div>

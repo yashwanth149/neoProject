@@ -375,18 +375,24 @@ body {
   background-color: rgba(0, 92, 83, 0.8);
 }
 
+.row2 .member .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .row2 .member .star {
-  background-color: rgba(188, 197, 206, 0.2);
   padding: 5px 0 3px 5px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
-.row2 .member .star i {
+.row2 .member .star span {
   color: rgba(0, 0, 0, 0.6);
   font-size: 12px;
-  padding: 0;
 }
 
 .row2 .member .star * {
