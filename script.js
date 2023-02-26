@@ -1,14 +1,3 @@
-// const shapes = document.querySelectorAll('.shape');
-
-// shapes.forEach(shape => {
-//   shape.addEventListener('click', event => {
-//     const star = event.target.closest('.stars');
-//     star.innerHTML = `${event.target.getAttribute('data-value')} <i class="fas fa-star"></i> `;
-//     star.style.paddingLeft = '6px';
-//     star.style.fontSize = '11px'
-//   });
-// });
-
 const newsDiv = document.querySelectorAll(".stars");
 for (const starDiv of newsDiv) {
   for (let j = 0; j < 5; j++) {
